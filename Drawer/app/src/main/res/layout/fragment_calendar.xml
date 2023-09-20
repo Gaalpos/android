@@ -7,12 +7,6 @@
     tools:context=".calendar">
 
 
-    <TextView
-        android:id="@+id/textCalendar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contenido del Calendario" />
-
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="wrap_content"
