@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,15 +23,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        button = findViewById(R.id. boton);
+        button = findViewById(R.id.boton);
         button.setOnClickListener(view -> onClickSwitch(view));
 
     }
 
 
     public void onClickSwitch(View view){
-        editText.findViewById(R.id.cajita);
+        editText = findViewById(R.id.cajita);
         String text = editText.getText().toString();
         Intent intent = new Intent(this, secondActivity.class);
         intent.putExtra(Intent.EXTRA_TEXT, text);
@@ -41,5 +41,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+
+        if(resultCode==RESULT_OK){
+            textView = findViewById(R.id.resultado);
+            String texto= data.getStringExtra(REQUEST_RESULT);
+            textView.setText(texto);
+        }
     }
+
+
 }
