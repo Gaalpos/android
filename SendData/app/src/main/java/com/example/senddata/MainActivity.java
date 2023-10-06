@@ -29,8 +29,12 @@ public class MainActivity extends AppCompatActivity {
         editText2 = findViewById(R.id.cajita2);
         String text2 = editText2.getText().toString();
 
+        Bundle extras = new Bundle();
+        extras.putString("user",text);
+        extras.putString("pass",text2);
+
         Intent intent = new Intent(this, LoginActivity.class);
-        intent.putExtra(Intent.EXTRA_TEXT, text +"-"+text2);
+        intent.putExtra(Intent.EXTRA_TEXT, extras);
         intent.putExtra(Intent.EXTRA_TEXT,text);
         startActivity(intent);
     }

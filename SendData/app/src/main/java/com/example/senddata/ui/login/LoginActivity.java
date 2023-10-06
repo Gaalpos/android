@@ -24,8 +24,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.senddata.R;
-import com.example.senddata.ui.login.LoginViewModel;
-import com.example.senddata.ui.login.LoginViewModelFactory;
 import com.example.senddata.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends AppCompatActivity {
@@ -42,16 +40,21 @@ public class LoginActivity extends AppCompatActivity {
 
         loginViewModel = new ViewModelProvider(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
+        //Cambio para obtener el nombre del INTENT
         final EditText usernameEditText = binding.username;
-
         if(getIntent() != null && getIntent().hasExtra(Intent.EXTRA_TEXT)){
-            String[] textos = getIntent().getStringExtra(Intent.EXTRA_TEXT).split("-");
-            //usernameEditText.setText(getIntent().getStringExtra(Intent.EXTRA_TEXT));
-            usernameEditText.setText(textos[0]);
-            usernameEditText.setText(textos[1]);
-
+            usernameEditText.setText(getIntent().getStringExtra(Intent.EXTRA_TEXT));
         }
-        //final EditText passwordEditText = binding.password;
+        final EditText passwordEditText = binding.password;
+        if(getIntent() != null && getIntent().hasExtra(Intent.EXTRA_TEXT)){
+            //passwordEditText.setText(getIntent().getStringExtra(Intent.EXTRA_TEXT));
+            Bundle extras = new Bundle();
+            extras.putString("user", text);
+            extras.putString("pass", text2);
+
+            usernameEditText.setText(getIntent().getExtras().getBundle("user").toString());
+            passwordEditText.setText(getIntent().getExtras().getBundle("password").toString());
+        }
         final Button loginButton = binding.login;
         final ProgressBar loadingProgressBar = binding.loading;
 
