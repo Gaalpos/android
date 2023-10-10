@@ -48,19 +48,22 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="72dp"
         android:text="restar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/sumar"
-        tools:layout_editor_absoluteY="366dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="80dp"
         android:text="dividir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sumar"
-        app:layout_constraintVertical_bias="0.412" />
+        app:layout_constraintVertical_bias="0.408" />
 
     <Button
         android:id="@+id/multiplicar"
