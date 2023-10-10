@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         editText = findViewById(R.id.caja);
         editText.setText(texto);
         textView = findViewById(R.id.resultado);
-        textView.setText("Contaodr: "+ Integer.toString(mContador));
+        textView.setText("Contaodr: "+ Integer.toString(mContador)); 
     }
 
     public void contador(View View){
