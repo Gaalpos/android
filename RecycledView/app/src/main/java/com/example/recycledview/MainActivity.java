@@ -1,8 +1,14 @@
 package com.example.recycledview;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,5 +16,27 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        List<String > list = new ArrayList<>();
+        list.add("Germany");
+        list.add("Spain");
+        list.add("Argentina");
+        list.add("Portugal");
+        list.add("Hungria");
+
+       RecyclerView recyclerView = findViewById(R.id.reciclaje);
+       recyclerView.setHasFixedSize(true);
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+
+        recyclerView.setLayoutManager(linearLayoutManager);
+        // para cargar la lista en cada elemento.xml
+        MiAdaptador miAdaptador = new MiAdaptador(list);
+
+        recyclerView.setAdapter(miAdaptador);
+
+
+
     }
 }
