@@ -1,4 +1,4 @@
-package com.example.recycledview;
+package com.example.recyclerimage;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         List <Datos> list = Datos.poblarDatos();
+
         /*
         list.add("Germany");
         list.add("Spain");
