@@ -1,5 +1,6 @@
 package com.example.recyclerimage;
 
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import java.util.List;
 
 public class MiAdaptador extends RecyclerView.Adapter<MiAdaptador.MiViewHolder>{
 
+    Image imagen;
     // cambiar el stgring por un objeto de datos
     private List<Datos> nameList;
     public MiAdaptador(List<Datos>list ){
@@ -33,6 +35,7 @@ public class MiAdaptador extends RecyclerView.Adapter<MiAdaptador.MiViewHolder>{
    final  Datos cadenas = nameList.get(position);
     holder.texto.setText(cadenas.getNombre());
     holder.detalle.setText(cadenas.getDescripcion());
+   // holder.imagen.
     }
 
     @Override
