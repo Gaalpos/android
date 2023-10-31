@@ -45,11 +45,10 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.113" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="140dp"
-        android:layout_height="154dp"
-        android:checked="false"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
