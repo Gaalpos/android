@@ -1,0 +1,10 @@
+Find device storage corrupted your device is unsafe now
+1. You need Unlocked Bootloader and TWRP. You can boot in TWRP instead of flashing it.
+2. Download the fastboot ROM for the device. Extract it and copy persist.img file to the internal memory of the phone. Make sure put the file in internal storage rather than in any folder.
+3. Put the phone in fastboot Mode, Power Button and Volume Down key.
+4. Boot in TWRP by "fastboot boot twrp.img" command.
+5. In the TWRP Main Menu. Go to Advanced ------ Terminal
+6. Write the below 2 lines:
+simg2img /sdcard/persist.img /sdcard/persist_EXT4.img
+dd if=/sdcard/persist_EXT4.img of=/dev/block/bootdevice/by-name/persist
+7. Reboot the Phone and check.
