@@ -4,6 +4,7 @@ import static android.graphics.Color.rgb;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -11,6 +12,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 //import android.widget.GridLayout;
 import androidx.gridlayout.widget.GridLayout;
+
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -30,16 +33,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         for(int i=0; i<g.getChildCount();i++){
             v=g.getChildAt(i);
-           System.out.println("Objeto: "+v.toString());
+            Button b = (Button)v;
+            b.setBackgroundColor(rgb(255,255,255));
+
+         //  System.out.println("Objeto: "+v.toString());
            // Log.i("Objeto: ",v.toString());
         }
 
     }
 
+    @SuppressLint("ResourceType")
     public void addhijos(){
         GridLayout g = (GridLayout)   findViewById(R.id.rejilla);
         Button b;
-        for(int i=0; i<25;i++){
+        for(int i=0; i<17;i++){
             b = new Button(this);
             b.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
             b.setText("btn: "+i);
@@ -47,16 +54,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             b.setOnClickListener(this);
             g.addView(b,i);
         }
+        b = new Button(this);
+        b.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+        b.setText("SET");
+        b.setId(18);
+        b.setOnClickListener(this);
+        g.addView(b);
     }
 
+    @SuppressLint("ResourceType")
     @Override
     public void onClick(View view) {
+        Button b = (Button) view;
+        if(view.getClass().getSimpleName().equals("Button") && b.getId()!=18){
+            Random r1 = new Random();
+            Random r2 = new Random();
+            Random r3 = new Random();
 
-        if(view.getClass().getSimpleName().equals("Button")){
-            Button b = (Button) view;
-            b.setBackgroundColor(rgb(200, 50, 12));
+            b.setBackgroundColor(rgb(r1.nextInt(255), r2.nextInt(255), r3.nextInt(255)));
+        }else{
+            recorrer();
         }
-
-
     }
 }
