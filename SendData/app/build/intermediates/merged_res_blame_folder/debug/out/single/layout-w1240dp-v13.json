@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.example.senddata.app-mergeDebugResources-3:/layout-w1240dp-v13/activity_login.xml",
+        "source": "com.example.senddata.app-main-6:/layout-w1240dp/activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Cebem\\.gradle\\daemon\\8.0\\com.example.senddata.app-mergeDebugResources-3:\\layout-w1240dp-v13\\activity_login.xml",
+        "source": "C:\\Users\\Cebem\\.gradle\\daemon\\8.0\\com.example.senddata.app-main-6:\\layout-w1240dp\\activity_login.xml"
+    }
+]

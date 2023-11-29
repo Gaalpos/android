@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.a036submenu.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Item1" >
+        <menu
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <item
+                android:id="@+id/sub1A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="Item" />
+            <item
+                android:id="@+id/sub2A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="Item" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/tem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Item2" />
+
+</menu>

@@ -1,0 +1,22 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id desajustes
+id menu_settings
+id textView
+id toolbar
+layout activity_main
+layout content_main
+menu menu_mio
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string menu_settings
+string menu_settings2
+style Base.Theme._035MenuOpciones
+style Theme._035MenuOpciones
+xml backup_rules
+xml data_extraction_rules
