@@ -1,3 +1,0 @@
-com.example.a036submenu.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme
