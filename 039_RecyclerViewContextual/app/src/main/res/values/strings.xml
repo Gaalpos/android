@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">039_RecyclerViewContextual</string>
+
+    <string name="menu_reply">Reply List</string>
+    <string name="menu_reply_all">Reply all </string>
+    <string name="menu_forward"> Forward</string>
 </resources>

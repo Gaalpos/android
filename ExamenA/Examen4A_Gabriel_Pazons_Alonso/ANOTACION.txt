@@ -1,0 +1,4 @@
+En el ejercicio 4A, el navbar solo me genera 3 iconos,
+por lo que he añadido el solicitado CHAIR
+Lo digo porque en el documento del examen dice que
+nos aparecen 4 iconos pero no es el caso
