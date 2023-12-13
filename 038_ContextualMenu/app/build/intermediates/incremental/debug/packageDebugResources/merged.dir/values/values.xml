@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">038_ContextualMenu</string>
+    <string name="menu_cast">Cast</string>
+    <string name="menu_print">Print</string>
+    <style name="Base.Theme._038_ContextualMenu" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme._038_ContextualMenu" parent="Base.Theme._038_ContextualMenu"/>
+</resources>
