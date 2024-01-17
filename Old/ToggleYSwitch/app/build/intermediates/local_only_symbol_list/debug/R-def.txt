@@ -1,0 +1,23 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable avatar_1
+drawable avatar_2
+drawable avatar_3
+drawable avatar_4
+drawable avatar_5
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id imageView
+id switch1
+id textView
+id toggleButton
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.ToggleYSwitch
+style Theme.ToggleYSwitch
+xml backup_rules
+xml data_extraction_rules

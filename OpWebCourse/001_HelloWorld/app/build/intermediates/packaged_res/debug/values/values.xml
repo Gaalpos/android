@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">001_HelloWorld</string>
+    <style name="Base.Theme._001_HelloWorld" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme._001_HelloWorld" parent="Base.Theme._001_HelloWorld"/>
+</resources>

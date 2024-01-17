@@ -1,0 +1,23 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color colorAccent
+color colorSecondary
+color white
+drawable baseline_emoji_emotions_24
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id emial
+id login
+id logo
+id password
+id register
+id version
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme._013_Formulario
+style Theme._013_Formulario
+xml backup_rules
+xml data_extraction_rules
