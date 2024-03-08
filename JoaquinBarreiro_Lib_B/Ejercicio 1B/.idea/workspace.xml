@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98501ca8-d259-474a-897e-3adf686aa6ba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../JoaquinBarreiro_PMMLib_B.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../JoaquinBarreiro_PMMLib_B.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FINAL/Ejercicio_1B/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../FINAL/Ejercicio_1B/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FINAL/Ejercicio_1B/app/src/main/java/com/example/ejercicio_1b/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../FINAL/Ejercicio_1B/app/src/main/java/com/example/ejercicio_1b/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FINAL/Ejercicio_1B/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +20,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2dNVbylvVuRakjvcbqPBxoTy3F8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,7 +39,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/deck/DAM/android/JoaquinBarreiro_Lib_B/Ejercicio 1B"
+    "last_opened_file_path": "/home/deck/DAM/android/JoaquinBarreiro_Lib_B/Ejercicio 2B"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
